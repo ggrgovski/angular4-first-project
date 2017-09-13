@@ -1,0 +1,3 @@
+<!-- <span class="glyphicon glyphicon-heart cursor-pointer" [class.like-inactive]="!isLiked" [class.like-active]="isLiked" (click)="onClick()"></span> -->
+<span class="glyphicon glyphicon-heart cursor-pointer" [ngClass]="{'like-inactive': !isLiked, 'like-active': isLiked}" (click)="onClick()"></span>
+{{ likesCount }}

@@ -1,0 +1,11 @@
+.like-inactive{
+    color: #ccc;
+}
+
+.like-active{
+    color: deeppink;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
