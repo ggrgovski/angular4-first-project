@@ -7,3 +7,53 @@
       >{{ archive.year + '/' + archive.month }}</a>
   </li>
 </ul>
+
+
+<courses></courses>
+<authors></authors>
+<title-case-format></title-case-format>
+<favorite [isFavorite]='root.isFavorite' (change)='onFavoriteChanged($event)'></favorite>
+
+<bootstrap-panel>
+    <ng-container class="heading">Heading</ng-container>
+    <div class="body">
+        <h2>Body</h2>
+        <p>Some content...</p>
+    </div>
+</bootstrap-panel>
+
+
+
+<like [likesCount]='tweet.likesCount' [isLiked]='tweet.isLiked'></like>
+
+
+<input type="text" [appInputFormat]="'uppercase'">
+
+
+<zippy title="Shipping Details">
+    Shipping Details content
+</zippy>
+<zippy title="Billing Details">
+    Billing Details content
+</zippy>
+
+
+<contact-form></contact-form>
+
+
+<course-form></course-form>
+
+
+<signup-form></signup-form>
+
+
+<new-course-form></new-course-form>
+
+
+<change-password></change-password>
+
+<!-- 
+<posts></posts>
+
+
+<github-followers></github-followers> -->

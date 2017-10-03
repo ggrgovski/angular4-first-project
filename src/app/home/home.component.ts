@@ -1,3 +1,4 @@
+import { FavoriteChangedEventArgs } from './../favorite/favorite.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,6 +15,23 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  title = 'Angular app';
+  
+  root = {
+    isFavorite: true
+  }
+
+  tweet = {
+    body: 'Here is the body of a tweet...',
+    isLiked: true,
+    likesCount: 10
+  }
+
+  onFavoriteChanged(eventArgs: FavoriteChangedEventArgs){
+    console.log((eventArgs.newValue) ? 'Favorite' : 'Non-Favorite');
   }
 
 }

@@ -69,28 +69,6 @@ import { ArchiveComponent } from './archive/archive.component';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    // RouterModule.forRoot([
-    //   { 
-    //     path: '', 
-    //     component: HomeComponent 
-    //   },
-    //   { 
-    //     path: 'followers/:id/:username', 
-    //     component: GithubProfileComponent 
-    //   },
-    //   { 
-    //     path: 'followers', 
-    //     component: GithubFollowersComponent 
-    //   },
-    //   { 
-    //     path: 'posts', 
-    //     component: PostsComponent 
-    //   },
-    //   { 
-    //     path: '**', 
-    //     component: NotFoundComponent 
-    //   }
-    // ])
     RouterModule.forRoot([
       { 
         path: '', 
@@ -99,6 +77,18 @@ import { ArchiveComponent } from './archive/archive.component';
       { 
         path: 'archive/:year/:month', 
         component: ArchiveComponent 
+      },
+      {
+        path: 'followers/:id/:username', 
+        component: GithubProfileComponent 
+      },
+      { 
+        path: 'followers', 
+        component: GithubFollowersComponent 
+      },
+      { 
+        path: 'posts', 
+        component: PostsComponent 
       },
       { 
         path: '**', 
