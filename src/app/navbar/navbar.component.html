@@ -1,18 +1,72 @@
-<nav class="navbar navbar-default">
+
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="">
+        <img alt="Angular" src="assets/logo-nav@2x.png">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li>
-            <a routerLink="">Home</a>
-          </li>
+          <li routerLinkActive="active">
+              <a routerLink="/followers" 
+                [queryParams]="{ page: 1, order: 'newest' }">Followers</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/posts">Posts</a>
+            </li>
         <li routerLinkActive="active">
-          <a routerLink="/followers" 
-            [queryParams]="{ page: 1, order: 'newest' }">Followers</a>
-        </li>
-        <li routerLinkActive="active">
-          <a routerLink="/posts">Posts</a>
+          <ngb-dropdown>
+              <a class="navbar-dropdown" ngb-dropdown-toggle role="button">Components <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li routerLinkActive="active">
+                    <a routerLink="/courses">Courses</a>
+                  </li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/authors">Authors</a>
+                  </li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/titleCaseFormat">Title Case Format</a>
+                  </li>
+                  <!-- <li routerLinkActive="active">
+                    <a routerLink="/changePassword">Change Password</a>
+                  </li> -->
+                  <li role="separator" class="divider"></li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/contactForm">Contact Form</a>
+                  </li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/courseForm">Course Form</a>
+                  </li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/signupForm">Signup Form</a>
+                  </li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/newCourseForm">New Course Form</a>
+                  </li>
+                  <li routerLinkActive="active">
+                    <a routerLink="/changePasswordForm">Change Password Form</a>
+                  </li>
+              </ul>
+            </ngb-dropdown>
+          
         </li>
       </ul>
-    </div>
-  </div>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>

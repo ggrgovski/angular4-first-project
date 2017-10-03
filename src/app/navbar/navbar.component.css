@@ -1,0 +1,34 @@
+body {
+    padding-top: 70px;
+  }
+  .navbar.navbar-inverse {
+    border: none;
+  }
+  .navbar .navbar-brand {
+    padding-top: 0px;
+  }
+  .navbar .navbar-brand img {
+    height: 50px;
+  }
+
+
+
+
+.navbar-dropdown {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    color: #9d9d9d;;
+}
+
+.navbar-dropdown:hover
+.navbar-dropdown:focus{
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.open>.navbar-dropdown{
+    color: #fff;
+    background-color: #080808;
+} 

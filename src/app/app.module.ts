@@ -36,6 +36,8 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { ArchiveComponent } from './archive/archive.component';
+// import { NgbDropdown, NgbDropdownToggle } from './navbar/dropdown';
+import { NgbDropdown } from './navbar/dropdown';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,8 @@ import { ArchiveComponent } from './archive/archive.component';
     HomeComponent,
     GithubProfileComponent,
     NotFoundComponent,
+    NgbDropdown,
+    // NgbDropdownToggle,
     ArchiveComponent
   ],
   imports: [
@@ -89,6 +93,42 @@ import { ArchiveComponent } from './archive/archive.component';
       { 
         path: 'posts', 
         component: PostsComponent 
+      },
+      { 
+        path: 'courses', 
+        component: CoursesComponent 
+      },
+      { 
+        path: 'authors', 
+        component: AuthorsComponent 
+      },
+      { 
+        path: 'titleCaseFormat', 
+        component: TitleCaseFormatComponent 
+      },
+      // { 
+      //   path: 'changePassword', 
+      //   component: ChangePasswordComponent 
+      // },
+      { 
+        path: 'contactForm', 
+        component: ContactFormComponent 
+      },
+      { 
+        path: 'courseForm', 
+        component: CourseComponent 
+      },
+      { 
+        path: 'signupForm', 
+        component: SignupFormComponent 
+      },
+      { 
+        path: 'newCourseForm', 
+        component: NewCourseFormComponent 
+      },
+      { 
+        path: 'changePasswordForm', 
+        component: ChangePasswordFormComponent 
       },
       { 
         path: '**', 
