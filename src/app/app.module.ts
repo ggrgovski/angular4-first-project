@@ -1,3 +1,4 @@
+import { AuthModule } from './auth-module/auth.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
 import { HomeComponent } from './home/home.component';
@@ -73,6 +74,8 @@ import { NgbDropdown } from './navbar/dropdown';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    AuthModule,
+    
     RouterModule.forRoot([
       { 
         path: '', 

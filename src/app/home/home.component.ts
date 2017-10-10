@@ -1,3 +1,4 @@
+import { AuthService } from './../auth-module/services/auth.service';
 import { FavoriteChangedEventArgs } from './../favorite/favorite.component';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
     { year: 2017, month: 2 },
     { year: 2017, month: 3 }
   ]
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
   }
